@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OCRActivity" >
+
+    <TextView
+        android:id = "@+id/tv_scrfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:scrollbars="vertical"
+        android:text="选择图片来源"/>
+
+    <Button
+        android:id="@+id/bt_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_scrfrom"
+        android:text="手机图库"
+        ></Button>
+
+    <Button
+        android:id="@+id/bt_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_scrfrom"
+        android:layout_toRightOf="@id/bt_gallery"
+        android:text="拍照"
+        />
+
+    <TextView
+        android:id = "@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_gallery"
+        android:textIsSelectable="true"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/bt_changelan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_language"
+        android:text="转换语言"
+        />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="centerInside"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/bt_changelan"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/bt_stop_tts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_changelan"
+        android:layout_toRightOf="@id/image"
+        android:text="暂停"
+        />
+
+    <TextView
+        android:id = "@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:textIsSelectable="true"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

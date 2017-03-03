@@ -1,0 +1,2 @@
+include ':androidtesseractocrmaster3'
+include ':openCVLibrary310'
